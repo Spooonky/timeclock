@@ -127,7 +127,7 @@ CREATE TABLE `users` (
   `is_admin` tinyint(1) unsigned NOT NULL,
   `hours_worked` int(11) unsigned DEFAULT NULL,
   `created` datetime NOT NULL,
-  `schedule` varchar(256) DEFAULT NULL,
+  `schedule` varchar(565) DEFAULT NULL,
   `time_format` varchar(12) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
