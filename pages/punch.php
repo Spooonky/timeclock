@@ -148,12 +148,6 @@ if (!empty($punchResults)) {
           </div>
         </div>
         <div class="form-group">
-          <label class="col-lg-3 control-label">IP Address</label>
-          <div class="col-lg-9">
-            <p class="form-control-static"><?php echo $punchResults['ip_address']; ?></p>
-          </div>
-        </div>
-        <div class="form-group">
           <label class="col-lg-3 control-label">Note</label>
           <div class="col-lg-9">
             <?php if ( $canEdit && $editMode ) { ?>

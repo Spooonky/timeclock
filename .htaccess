@@ -1,17 +1,8 @@
-allow from 50.162.15.21
-allow from 192.185.1.20
-allow from 98.197.136.27
-allow from 76.31.179.250
-allow from 70.138.115.120
-allow from 66.162.212.19
-deny from all
-
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+RewriteBase /mtz/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 </IfModule>
-	 

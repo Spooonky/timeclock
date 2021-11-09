@@ -5,4 +5,4 @@
  * @global string $timeclock_version
  */
  
-$timeclock_version = '0.7.1';
+$timeclock_version = '0.1.1';

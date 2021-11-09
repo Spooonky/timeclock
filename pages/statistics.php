@@ -1,5 +1,6 @@
 <?php
 
+
 if (!defined('TIMECLOCK')) die();
 if ($user->isAdmin()) {
     include_once('./includes/admin.class.php');

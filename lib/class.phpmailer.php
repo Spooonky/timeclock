@@ -69,13 +69,13 @@ class PHPMailer
      * The From email address for the message.
      * @type string
      */
-    public $From = 'root@localhost';
+    public $From = 'info@spooonky.com';
 
     /**
      * The From name of the message.
      * @type string
      */
-    public $FromName = 'Root User';
+    public $FromName = 'Spoonkys TimeClock';
 
     /**
      * The Sender email (Return-Path) of the message.
@@ -219,14 +219,14 @@ class PHPMailer
      * Hosts will be tried in order.
      * @type string
      */
-    public $Host = 'localhost';
+    public $Host = 'smtp.strato.';
 
     /**
      * The default SMTP server port.
      * @type int
      * @Todo Why is this needed when the SMTP class takes care of it?
      */
-    public $Port = 25;
+    public $Port = 465;
 
     /**
      * The SMTP HELO of the message.
@@ -241,7 +241,7 @@ class PHPMailer
      * Options: "", "ssl" or "tls"
      * @type string
      */
-    public $SMTPSecure = '';
+    public $SMTPSecure = 'ssl';
 
     /**
      * Whether to use SMTP authentication.
@@ -250,26 +250,26 @@ class PHPMailer
      * @see PHPMailer::$Username
      * @see PHPMailer::$Password
      */
-    public $SMTPAuth = false;
+    public $SMTPAuth = true;
 
     /**
      * SMTP username.
      * @type string
      */
-    public $Username = '';
+    public $Username = 'info@spooonky.com';
 
     /**
      * SMTP password.
      * @type string
      */
-    public $Password = '';
+    public $Password = 'M4GgEr20975275';
 
     /**
      * SMTP auth type.
      * Options are LOGIN (default), PLAIN, NTLM, CRAM-MD5
      * @type string
      */
-    public $AuthType = '';
+    public $AuthType = 'LOGIN';
 
     /**
      * SMTP realm.

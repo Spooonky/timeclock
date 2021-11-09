@@ -127,7 +127,6 @@ function savePunchDetails($punchID, $newChanges) {
             }
         }
         
-        
     }
     
     if ($result['status'] == true) {
@@ -152,6 +151,7 @@ function adjustHoursWorked($user) {
     
     foreach ($result as $row) {
         $newHoursWorked = timeBetweenDates($row['previous_punch'], $row['timestamp']);
+        //$newHoursWorkedNetto =  $newHoursWorkedBrutto - $userSchedule[strtolower($day)]['break'];
         
         $data = $db->prepare('UPDATE punches SET hours_worked=:hoursworked WHERE id=:id');
         $data->bindParam(':hoursworked', $newHoursWorked);
@@ -432,3 +432,4 @@ function destroy_session() {
     //clear session from disk
     session_destroy();
 }
+
