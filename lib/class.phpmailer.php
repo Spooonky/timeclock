@@ -219,7 +219,7 @@ class PHPMailer
      * Hosts will be tried in order.
      * @type string
      */
-    public $Host = 'smtp.strato.';
+    public $Host = '';
 
     /**
      * The default SMTP server port.
@@ -241,7 +241,7 @@ class PHPMailer
      * Options: "", "ssl" or "tls"
      * @type string
      */
-    public $SMTPSecure = 'ssl';
+    public $SMTPSecure = '';
 
     /**
      * Whether to use SMTP authentication.
@@ -256,20 +256,20 @@ class PHPMailer
      * SMTP username.
      * @type string
      */
-    public $Username = 'info@spooonky.com';
+    public $Username = '';
 
     /**
      * SMTP password.
      * @type string
      */
-    public $Password = 'M4GgEr20975275';
+    public $Password = '';
 
     /**
      * SMTP auth type.
      * Options are LOGIN (default), PLAIN, NTLM, CRAM-MD5
      * @type string
      */
-    public $AuthType = 'LOGIN';
+    public $AuthType = '';
 
     /**
      * SMTP realm.
