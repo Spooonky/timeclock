@@ -5243,6 +5243,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-warning {
   border-color: transparent;
+  width: 600px;
 }
 .panel-warning > .panel-heading {
   color: #ffffff;

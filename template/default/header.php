@@ -13,17 +13,17 @@ $userIsWorking = $user->isWorking();
     <title>TimeClock</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/template/default/css/lumen_bootstrap.css" rel="stylesheet">
+    <link href="./template/default/css/lumen_bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/template/default/css/timeclock.css" rel="stylesheet">
+    <link href="./template/default/css/timeclock.css" rel="stylesheet">
     <? if ($main) { ?>
-    <link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/template/default/css/clock-main.css" rel="stylesheet">
+    <link href="./template/default/css/clock-main.css" rel="stylesheet">
     <? } else {
         if ($userIsWorking) { ?>
-    <link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/template/default/css/clock-min-right.css" rel="stylesheet">
+    <link href="./template/default/css/clock-min-right.css" rel="stylesheet">
     <? } else { ?>
-    <link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/template/default/css/clock-min.css" rel="stylesheet">
+    <link href="./template/default/css/clock-min.css" rel="stylesheet">
     <? }
     }?>
     <!-- Jquery! -->
@@ -32,12 +32,12 @@ $userIsWorking = $user->isWorking();
     <!-- Bootstrap minified JS -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     
-    <link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/lib/fullcalendar-2.0.3/fullcalendar.css" rel='stylesheet' />
-    <link href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/lib/fullcalendar-2.0.3/fullcalendar.print.css" rel='stylesheet' media='print' />
-    <script src="https://<?php echo $_SERVER['SERVER_NAME']; ?>/lib/fullcalendar-2.0.3/lib/moment.min.js"></script>
+    <link href="./lib/fullcalendar-2.0.3/fullcalendar.css" rel='stylesheet' />
+    <link href="./lib/fullcalendar-2.0.3/fullcalendar.print.css" rel='stylesheet' media='print' />
+    <script src="./lib/fullcalendar-2.0.3/lib/moment.min.js"></script>
     <!--<script src='../lib/jquery.min.js'></script>
     <script src='../lib/jquery-ui.custom.min.js'></script>-->
-    <script src="https://<?php echo $_SERVER['SERVER_NAME']; ?>/lib/fullcalendar-2.0.3/fullcalendar.min.js"></script>
+    <script src="./lib/fullcalendar-2.0.3/fullcalendar.min.js"></script>
 
 
   </head>
@@ -69,9 +69,9 @@ $userIsWorking = $user->isWorking();
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['fn'] ." ". $_SESSION['ln']; ?> <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <?php if($user->isAdmin()) { echo '<li><a href="https://'.$_SERVER['SERVER_NAME'].'/admin">Admin</a></li>' ; } ?>
-          <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/edit">Edit Profile</a></li>
+          <li><a href="edit">Edit Profile</a></li>
           <li class="divider"></li>
-          <li><a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/logout.php">Log out</a></li>
+          <li><a href="logout.php">Log out</a></li>
         </ul>
       </li>
     </ul>
